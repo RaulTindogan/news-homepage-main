@@ -9,9 +9,9 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
-  <header class="container p-5 mx-auto">
+  <header class="md:container p-5 mx-auto">
     <nav>
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center md:hidden">
           <div>
             <img src="./assets/images/logo.svg" alt="LOGO" class="cursor-pointer">
           </div>
@@ -19,83 +19,87 @@
             <img src="./assets//images/icon-menu.svg" alt="Menu Button" class="cursor-pointer">
           </div>
       </div>
-      <div class="hidden">
+      <div class="hidden justify-between md:flex">
         <div>
           <picture>
             <img src="./assets/images/logo.svg" alt="">
           </picture>
         </div>
-        <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
+        <ul class="flex">
+          <li class="px-3 cursor-pointer">Home</li>
+          <li class="px-3 cursor-pointer">New</li>
+          <li class="px-3 cursor-pointer">Popular</li>
+          <li class="px-3 cursor-pointer">Trending</li>
+          <li class="px-3 cursor-pointer">Categories</li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="container px-5 mx-auto">
+  <main class="md:container px-5 mx-auto">
     <section>
-      <div>
-        <div>
-          <picture>
-            <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg">
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="">
-          </picture>
-        </div>
-        <div>
-          <h1 class="text-4xl font-bold my-4">The Bright Future of Web 3.0?</h1>
-          <p class="text-sm">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-          <button>Read more</button>
-        </div>
-      </div>
-      <div>
-        <h2>New</h2>
-        <div>
+      <div class="md:flex">
+        <div class="mb-10">
           <div>
-            <h3>Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg">
+              <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+            </picture>
           </div>
-          <div>
-            <h3>The Downsides of AI Artistry</h3>
-            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          <div class="md:flex md:py-3">
+            <h1 class="text-4xl font-[700] my-4 md:my-0 md:text-5xl">The Bright Future of Web 3.0?</h1>
+            <div>
+              <p class="mb-5 md:mb-10">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <button class="py-3 px-6 bg-soft-red text-[12px] tracking-[.3rem] font-[700] text-off-white">READ MORE</button>
+            </div>
           </div>
+        </div>
+        <div class="bg-very-dark-blue text-off-white px-4 py-4 text-[14px]">
+          <h2 class="text-2xl text-soft-orange font-[700] mb-5">New</h2>
           <div>
-            <h3>Is VC Funding Drying Up?</h3>
-            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            <div class="pb-5 border-b-2 border-off-white/20">
+              <h3 class="text-base font-[700] mb-2">Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <div class="pb-5 pt-5 border-b-2 border-off-white/20">
+              <h3 class="text-base font-[700] mb-2">The Downsides of AI Artistry</h3>
+              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <div class="pt-5">
+              <h3 class="text-base font-[700] mb-2">Is VC Funding Drying Up?</h3>
+              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <div>
-          <img src="" alt="">
+    <section class="py-10 grid grid-cols-1 md:grid-cols-2">
+      <div class="flex text-[14px] mb-5 text-dark-grayish-blue font-[500]">
+        <div class="w-[30%]">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="" class="w-full h-full">
         </div>
-        <div>
-          <p>01</p>
-          <h4>Reviving Retro PCs</h4>
+        <div class="pl-3 w-[70%]">
+          <p class="text-2xl text-grayish-blue font-[700] mb-2">01</p>
+          <h4 class="text-very-dark-blue font-[800] font-custom mb-2">Reviving Retro PCs</h4>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
       </div>
-      <div>
-        <div>
-          <img src="" alt="">
+      <div class="flex text-[14px] mb-5 text-dark-grayish-blue font-[500]">
+        <div  class="w-[30%]">
+          <img src="./assets/images/image-top-laptops.jpg" alt="" class="w-full h-full">
         </div>
-        <div>
-          <p>02</p>
-          <h4>Top 10 Laptops of 2022</h4>
+        <div class="pl-3 w-[70%]">
+          <p class="text-2xl text-grayish-blue font-[700] mb-2">02</p>
+          <h4 class="text-very-dark-blue font-[800] font-custom mb-2">Top 10 Laptops of 2022</h4>
           <p>Our best picks for various needs and budgets.</p>
         </div>
       </div>
-      <div>
-        <div>
-          <img src="" alt="">
+      <div class="flex text-[14px] mb-5 text-dark-grayish-blue font-[500]">
+        <div class="w-[30%]">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" class="w-full h-full">
         </div>
-        <div>
-          <p>03</p>
-          <h4>The Growth of Gaming</h4>
+        <div class="pl-3 w-[70%]">
+          <p class="text-2xl text-grayish-blue font-[700] mb-2">03</p>
+          <h4 class="text-very-dark-blue font-[800] font-custom mb-2">The Growth of Gaming</h4>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
