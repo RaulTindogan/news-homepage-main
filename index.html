@@ -9,101 +9,134 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
-  <header class="md:container p-5 mx-auto">
+  <header class="md:px-10 md:py-10 min-[1440px]:container p-5 mx-auto">
     <nav>
       <div class="flex justify-between items-center md:hidden">
           <div>
             <img src="./assets/images/logo.svg" alt="LOGO" class="cursor-pointer">
           </div>
-          <div>
+          <button id="open-menu">
             <img src="./assets//images/icon-menu.svg" alt="Menu Button" class="cursor-pointer">
-          </div>
+          </button id="open-menu">
       </div>
       <div class="hidden justify-between md:flex">
         <div>
-          <picture>
             <img src="./assets/images/logo.svg" alt="">
-          </picture>
         </div>
-        <ul class="flex">
-          <li class="px-3 cursor-pointer">Home</li>
-          <li class="px-3 cursor-pointer">New</li>
-          <li class="px-3 cursor-pointer">Popular</li>
-          <li class="px-3 cursor-pointer">Trending</li>
-          <li class="px-3 cursor-pointer">Categories</li>
+        <ul class="flex lg:w-[40%] justify-between">
+          <a href="#" class="hover:text-soft-red px-3 cursor-pointe"><li>Home</li></a> 
+          <a href="#" class="hover:text-soft-red px-3 cursor-pointe"><li>New</li></a>
+          <a href="#" class="hover:text-soft-red px-3 cursor-pointe"><li>Popular</li></a>
+          <a href="#" class="hover:text-soft-red px-3 cursor-pointe"><li>Trending</li></a>
+          <a href="#" class="hover:text-soft-red px-3 cursor-pointe"><li>Categories</li></a>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="md:container px-5 mx-auto">
-    <section>
-      <div class="md:flex">
-        <div class="mb-10">
+  <main class="md:px-10 min-[1440px]:container px-5 mx-auto">
+    <section class="lg:mb-10">
+      <div class="lg:flex gap-5">
+        <div class="mb-10 md:mb-0 lg:w-[65%]">
           <div>
             <picture>
               <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg">
-              <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+              <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="w-full max-h-[400px]">
             </picture>
           </div>
-          <div class="md:flex md:py-3">
-            <h1 class="text-4xl font-[700] my-4 md:my-0 md:text-5xl">The Bright Future of Web 3.0?</h1>
-            <div>
-              <p class="mb-5 md:mb-10">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-              <button class="py-3 px-6 bg-soft-red text-[12px] tracking-[.3rem] font-[700] text-off-white">READ MORE</button>
+          <div class="md:flex md:py-7 items-center lg:pt-5 lg:pb-0">
+            <h1 class="text-4xl font-[700] mt-10 mb-5 md:my-0 md:text-5xl md:w-1/2 md:pr-[4rem] lg:pr-15 xl:text-[3.5rem] xl:pr-10">The Bright Future of Web 3.0?</h1>
+            <div class="md:w-1/2 md:pl-5 lg:pl-0 lg:flex lg:flex-col">
+              <p class="mb-10 lg:mb-11">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <div>
+                <button class="py-3 px-6 bg-soft-red text-[12px] tracking-[.3rem] font-[700] text-off-white hover:bg-very-dark-blue hover:font-[800]">READ MORE</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="bg-very-dark-blue text-off-white px-4 py-4 text-[14px]">
-          <h2 class="text-2xl text-soft-orange font-[700] mb-5">New</h2>
+        <div class="bg-very-dark-blue text-off-white p-4 text-[14px] md:p-8 lg:w-[35%]">
+          <h2 class="text-2xl text-soft-orange font-[700] mb-5 md:text-3xl lg:text-4xl lg:mb-10">New</h2>
           <div>
-            <div class="pb-5 border-b-2 border-off-white/20">
-              <h3 class="text-base font-[700] mb-2">Hydrogen VS Electric Cars</h3>
-              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <div class="pb-5 border-b-2 border-off-white/20 lg:pb-8">
+              <h3 class="text-base font-[700] mb-2 md:text-lg"><a href="#" class="hover:text-soft-orange">Hydrogen VS Electric Cars</a></h3>
+              <p class="md:text-sm">Will hydrogen-fueled cars ever catch up to EVs?</p>
             </div>
-            <div class="pb-5 pt-5 border-b-2 border-off-white/20">
-              <h3 class="text-base font-[700] mb-2">The Downsides of AI Artistry</h3>
-              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            <div class="pb-5 pt-5 border-b-2 border-off-white/20 lg:pb-8">
+              <h3 class="text-base font-[700] mb-2 md:text-lg"><a href="#" class="hover:text-soft-orange">The Downsides of AI Artistry</a></h3>
+              <p class="md:text-sm">What are the possible adverse effects of on-demand AI image generation?</p>
             </div>
             <div class="pt-5">
-              <h3 class="text-base font-[700] mb-2">Is VC Funding Drying Up?</h3>
-              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+              <h3 class="text-base font-[700] mb-2 md:text-lg"><a href="#" class="hover:text-soft-orange">Is VC Funding Drying Up?</a></h3>
+              <p class="md:text-sm">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="py-10 grid grid-cols-1 md:grid-cols-2">
+    <section class="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg: gap-5">
       <div class="flex text-[14px] mb-5 text-dark-grayish-blue font-[500]">
-        <div class="w-[30%]">
-          <img src="./assets/images/image-retro-pcs.jpg" alt="" class="w-full h-full">
+        <div class="">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="" class="w-full h-full max-w-[120px] max-h-[130px]">
         </div>
         <div class="pl-3 w-[70%]">
           <p class="text-2xl text-grayish-blue font-[700] mb-2">01</p>
-          <h4 class="text-very-dark-blue font-[800] font-custom mb-2">Reviving Retro PCs</h4>
+          <h4 class="text-very-dark-blue font-[800] font-custom mb-2"><a href="#" class="hover:text-soft-red">Reviving Retro PCs</a></h4>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
       </div>
       <div class="flex text-[14px] mb-5 text-dark-grayish-blue font-[500]">
-        <div  class="w-[30%]">
-          <img src="./assets/images/image-top-laptops.jpg" alt="" class="w-full h-full">
+        <div class="">
+          <img src="./assets/images/image-top-laptops.jpg" alt="" class="w-full h-full max-w-[120px] max-h-[130px]">
         </div>
         <div class="pl-3 w-[70%]">
           <p class="text-2xl text-grayish-blue font-[700] mb-2">02</p>
-          <h4 class="text-very-dark-blue font-[800] font-custom mb-2">Top 10 Laptops of 2022</h4>
+          <h4 class="text-very-dark-blue font-[800] font-custom mb-2"><a href="#" class="hover:text-soft-red">Top 10 Laptops of 2022</a></h4>
           <p>Our best picks for various needs and budgets.</p>
         </div>
       </div>
       <div class="flex text-[14px] mb-5 text-dark-grayish-blue font-[500]">
-        <div class="w-[30%]">
-          <img src="./assets/images/image-gaming-growth.jpg" alt="" class="w-full h-full">
+        <div class="">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" class="w-full h-full max-w-[120px] max-h-[130px]">
         </div>
         <div class="pl-3 w-[70%]">
           <p class="text-2xl text-grayish-blue font-[700] mb-2">03</p>
-          <h4 class="text-very-dark-blue font-[800] font-custom mb-2">The Growth of Gaming</h4>
+          <h4 class="text-very-dark-blue font-[800] font-custom mb-2"><a href="#" class="hover:text-soft-red">The Growth of Gaming</a></h4>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
     </section>
   </main>
+  <div class="w-full absolute top-0 right-0 bg-[#0000007d] justify-end hidden" id="modal">
+    <div class="w-[70%] h-[100vh] bg-off-white p-5">
+      <div class="flex justify-end mb-10">
+        <button id="close-menu">
+          <img src="./assets/images/icon-menu-close.svg" alt="">
+        </button>
+      </div>
+      <div class="text-xl pt-10 text-very-dark-blue">
+        <ul>
+          <li class="mb-5"><a href="#">Home</a></li>
+          <li class="mb-5"><a href="#">New</a></li>
+          <li class="mb-5"><a href="#">Popular</a></li>
+          <li class="mb-5"><a href="#">Trending</a></li>
+          <li class="mb-5"><a href="#">Categories</a></li>
+        </ul>
+      </div> 
+    </div>
+  </div>
+  <script>
+    const openMenu = document.getElementById('open-menu')
+    const closeMenu = document.getElementById('close-menu')
+    const modal = document.getElementById('modal')
+
+    openMenu.addEventListener('click', ()=>{
+      modal.classList.toggle('hidden')
+      modal.classList.toggle('flex')
+    }) 
+
+    closeMenu.addEventListener('click', ()=>{
+      modal.classList.toggle('hidden')
+      modal.classList.toggle('flex')
+    }) 
+  </script>
 </body>
 </html>
